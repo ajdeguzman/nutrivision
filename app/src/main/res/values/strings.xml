@@ -49,4 +49,8 @@ Praesent tincidunt lorem sit amet mi consequat cursus. Interdum et malesuada fam
     </string>
     <string name="click_one_of_the_tags_below">Click one of the tags below</string>
     <string name="err_unable_load_image">Unable to load selected image.</string>
+    <string name="intro_discover">Discover what\'s inside your food</string>
+    <string name="intro_get_result">Get instant result of your food\'s nutrition facts</string>
+    <string name="intro_header_read">Read Nutrition Facts</string>
+    <string name="intro_header_capture">Capture Food</string>
 </resources>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/bg_screen2">
@@ -15,12 +16,13 @@
         <ImageView
             android:layout_width="@dimen/img_width_height"
             android:layout_height="@dimen/img_width_height"
-            android:src="@drawable/ic_food2" />
+            android:src="@drawable/ic_food2"
+            tools:ignore="ContentDescription" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Read Nutrition Facts"
+            android:text="@string/intro_header_read"
             android:textColor="@android:color/white"
             android:textSize="@dimen/slide_title"
             android:textStyle="bold" />
@@ -31,9 +33,9 @@
             android:layout_marginTop="20dp"
             android:paddingLeft="@dimen/desc_padding"
             android:paddingRight="@dimen/desc_padding"
-            android:text="Get instant result of your food's nutrition facts"
+            android:text="@string/intro_get_result"
             android:textAlignment="center"
-            android:textColor="@android:color/white"
+            android:textColor="#F6BE28"
             android:textSize="@dimen/slide_desc" />
 
     </LinearLayout>
