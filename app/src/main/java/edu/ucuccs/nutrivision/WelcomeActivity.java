@@ -56,7 +56,8 @@ public class WelcomeActivity extends AppCompatActivity {
         // add few more layouts if you want
         layouts = new int[]{
                 R.layout.intro1,
-                R.layout.intro2};
+                R.layout.intro2,
+                R.layout.intro3};
 
         // adding bottom dots
         addBottomDots(0);

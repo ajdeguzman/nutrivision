@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/bg_screen1">
+    android:background="#921F2E">
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -16,7 +16,7 @@
         <ImageView
             android:layout_width="@dimen/img_width_height"
             android:layout_height="@dimen/img_width_height"
-            android:src="@drawable/ic_food"
+            android:src="@drawable/ic_intro_camera"
             tools:ignore="ContentDescription" />
 
         <TextView
@@ -35,7 +35,7 @@
             android:paddingRight="@dimen/desc_padding"
             android:text="@string/intro_discover"
             android:textAlignment="center"
-            android:textColor="#00E4FF"
+            android:textColor="@android:color/white"
             android:textSize="@dimen/slide_desc" />
 
     </LinearLayout>

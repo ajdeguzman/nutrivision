@@ -51,6 +51,10 @@ Praesent tincidunt lorem sit amet mi consequat cursus. Interdum et malesuada fam
     <string name="err_unable_load_image">Unable to load selected image.</string>
     <string name="intro_discover">Discover what\'s inside your food</string>
     <string name="intro_get_result">Get instant result of your food\'s nutrition facts</string>
+    <string name="intro_resto_menus">Be aware of the nutrition facts of your favorite fast-food restaurants</string>
+    <string name="intro_voice_food">Get nutritional information just by saying the food name</string>
     <string name="intro_header_read">Read Nutrition Facts</string>
+    <string name="intro_header_resto">Find Restaurants Menus</string>
     <string name="intro_header_capture">Capture Food</string>
+    <string name="intro_header_voice">Say the Food name</string>
 </resources>
