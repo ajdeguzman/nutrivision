@@ -35,6 +35,7 @@ import java.util.List;
 
 import edu.ucuccs.nutrivision.custom.CircleImageTransform;
 import edu.ucuccs.nutrivision.custom.CustomRequest;
+import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
 public class RestaurantActivity extends AppCompatActivity {
     private Toolbar mToolbar;
@@ -77,6 +78,12 @@ public class RestaurantActivity extends AppCompatActivity {
             showNoConnectionState();
         }
     }
+
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
+    }
+
     void setUpToolbar(){
         setSupportActionBar(mToolbar);
         if (getSupportActionBar() != null)

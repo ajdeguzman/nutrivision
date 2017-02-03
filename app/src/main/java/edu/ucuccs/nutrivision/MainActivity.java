@@ -67,6 +67,7 @@ import java.util.Locale;
 import java.util.concurrent.ExecutionException;
 
 import edu.ucuccs.nutrivision.custom.AdjustableLayout;
+import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
 import static android.provider.MediaStore.Images.Media;
 
@@ -193,6 +194,11 @@ public class MainActivity extends AppCompatActivity {
                 fabMenu.close(true);
             }
         });
+    }
+
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
     }
 
     void setUpToolbar() {

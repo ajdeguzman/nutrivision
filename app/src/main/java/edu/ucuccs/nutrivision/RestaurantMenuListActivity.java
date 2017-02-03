@@ -35,6 +35,7 @@ import java.util.List;
 
 import edu.ucuccs.nutrivision.custom.CircleImageTransform;
 import edu.ucuccs.nutrivision.custom.CustomRequest;
+import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
 public class RestaurantMenuListActivity extends AppCompatActivity
         implements AppBarLayout.OnOffsetChangedListener  {
@@ -100,6 +101,12 @@ public class RestaurantMenuListActivity extends AppCompatActivity
             Toast.makeText(getApplicationContext(), "No connection", Toast.LENGTH_LONG).show();
         }
     }
+
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
+    }
+
     private void loadRestaurantMenu() {
         pDialog = new ProgressDialog(this);
         pDialog.setMessage("Loading Menus...");

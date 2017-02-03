@@ -33,6 +33,8 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
+import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
+
 public class ResultActivity extends AppCompatActivity implements AppBarLayout.OnOffsetChangedListener {
     private Toolbar mToolbar;
     private String mTagTitle;
@@ -116,6 +118,12 @@ public class ResultActivity extends AppCompatActivity implements AppBarLayout.On
 
         }
     }
+
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
+    }
+
     void setUpToolbar(){
         setSupportActionBar(mToolbar);
         if (getSupportActionBar() != null)

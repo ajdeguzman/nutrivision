@@ -16,6 +16,7 @@ import com.android.volley.toolbox.ImageLoader;
 import com.android.volley.toolbox.Volley;
 
 import edu.ucuccs.nutrivision.utils.LruBitmapCache;
+import uk.co.chrisjenx.calligraphy.CalligraphyConfig;
 
 public class AppController extends Application {
 
@@ -31,6 +32,11 @@ public class AppController extends Application {
     public void onCreate() {
         super.onCreate();
         mInstance = this;
+        CalligraphyConfig.initDefault(new CalligraphyConfig.Builder()
+                .setDefaultFontPath("fonts/OpenSans-Regular.ttf")
+                .setFontAttrId(R.attr.fontPath)
+                .build()
+        );
     }
 
     public static synchronized AppController getInstance() {
